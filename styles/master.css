@@ -1,39 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
-
 * {
   box-sizing: border-box;
 }
-
 #main-row {
   height: 100vh;
 }
-
 #submit-btn {
   display: block;
   margin: 0px auto;
   background-color: #660066;
   color: white;
 }
-
 body {
   background: linear-gradient(to bottom right, #660066 0%, #003300 100%);
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
 }
-
-
 #my-container {
   background-color: inherit;
   color: white;
 }
-
 input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
-  color: red;
-  
+  color: red; 
 }
-
 select option {
   background: #660066;
   color: white;
+}
+@keyframes increaseTitleSize {
+  from{font-size: 40px;}
+  to{font-size: 60px;}
+}
+@keyframes decreaseTitleSize {
+  from{font-size: 60px;}
+  to{font-size: 40px;}
+}
+@keyframes increaseFieldSize {
+  from{font-size: 1rem;}
+  to{font-size: 1.5rem;}
+}
+@keyframes decreaseFieldSize {
+  from{font-size: 1.5rem;}
+  to{font-size: 1rem;}
 }
