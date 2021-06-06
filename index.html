@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/master.css">
+  <title>JS Project</title>
+</head>
+<body id="main-body">
+  <div id="my-container" class="container">
+    <div id="main-row" class="row d-flex justify-content-center align-items-center">
+      <div class="col-8">
+        <p class="h1 text-center">Placement Details</p>
+          <form id="my-form">
+            <div class="form-group">
+              <label for="fname">First Name : </label>
+              <input id="fname" type="text" class="form-control" placeholder="Bruce" tabindex="1" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name : </label>
+              <input id="lname" type="text" class="form-control" placeholder="Wayne" tabindex="2" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="roll_no">Roll No : </label>
+              <input id="roll_no" type="text" class="form-control" placeholder="18it04" tabindex="3" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label>Department : </label>
+              <select id="user_dept" name="department" class="custom-select" tabindex="4">
+                <option value="it">IT</option>
+                <option value="cse">CSE</option>
+                <option value="ece">ECE</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="roles_preferred">Roles : </label>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="check_ds" value="Data Science" tabindex="5">
+                <label class="custom-control-label" for="check_ds">Data Scientist</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="check_web" value="Web Development" tabindex="6">
+                <label class="custom-control-label" for="check_web">Web Developer</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="check_android" value="Android Development" tabindex="7">
+                <label class="custom-control-label" for="check_android">Android Developer</label>
+              </div>
+            </div>
+            <button id="submit-btn" type="button" class="btn" tabindex="8">Interested</button>
+          </form>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/master.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" 
+  crossorigin="anonymous"></script>
+</body>
+</html>
