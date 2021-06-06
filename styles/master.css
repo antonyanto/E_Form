@@ -30,10 +30,10 @@ select option {
 }
 @keyframes increaseTitleSize {
   from{font-size: 40px;}
-  to{font-size: 60px;}
+  to{font-size: 50px;}
 }
 @keyframes decreaseTitleSize {
-  from{font-size: 60px;}
+  from{font-size: 50px;}
   to{font-size: 40px;}
 }
 @keyframes increaseFieldSize {
@@ -43,4 +43,8 @@ select option {
 @keyframes decreaseFieldSize {
   from{font-size: 1.5rem;}
   to{font-size: 1rem;}
+}
+@keyframes loopBodyColor {
+  from{background: linear-gradient(to bottom right, #660066 0%, #003300 100%);}
+  to{background: linear-gradient(to top left, #660066 0%, #003300 100%);}
 }

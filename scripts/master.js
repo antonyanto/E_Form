@@ -110,7 +110,16 @@ function animateDecreaseInputFieldSize() {
 }
 
 
+function changeBodyBackgroundColor() {
+  let body = document.getElementById("main_body");
+  body.style.animationDuration = "2s";
+  body.style.animationIterationCount = "infinite";
+  body.style.animationName = "loopBodyColor";
+}
+
+
 function animateTitle() {
+  changeBodyBackgroundColor();
   animateIncreaseTitleSize();
   setTimeout(animateDecreaseTitleSize, 1900);
   animateIncreaseInputFieldSize();
@@ -124,6 +133,7 @@ document.getElementById("submit-btn").addEventListener("mouseover", changeButton
 document.getElementById("submit-btn").addEventListener("mouseout", changeButtonScaleOut);
 document.getElementById("submit-btn").addEventListener("click", retrieveDataFromSubmission);
 document.getElementById("main_body").onload = animateTitle;
+
 
 var elems = document.getElementsByClassName("form-control");
 for (let i = 0; i < elems.length; i++) {
